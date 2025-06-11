@@ -1,6 +1,6 @@
-- name: Enable UFW
-  ansible.builtin.command: ufw --force enable
-  become: true
+#- name: Enable UFW
+ # ansible.builtin.command: ufw --force enable
+  #become: true
 
 - name: Allow Nginx
   ansible.builtin.command: ufw allow "Nginx Full"
