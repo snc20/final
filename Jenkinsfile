@@ -16,11 +16,12 @@ pipeline {
 
         stage('Run Ansible Playbook') {
             steps {
-              sh '''
+             sh '''
   ANSIBLE_CONFIG=playbooks/ansible.cfg \
-  ansible-playbook -i inventory/hosts.yml playbooks/site.yml \
+  ansible-playbook playbooks/site.yml \
   -c local --become -e ansible_become_password=$ANSIBLE_BECOME_PASSWORD
 '''
+
             }
         }
     }
