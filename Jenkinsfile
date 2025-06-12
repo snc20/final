@@ -20,7 +20,7 @@ pipeline {
   ansible-playbook -i inventory/hosts.yml playbooks/site.yml \
   -c local --become \
   -e ansible_become_password=$ANSIBLE_BECOME_PASSWORD \
-  -M ./roles
+  -M ../roles
 '''
 
             }
