@@ -15,7 +15,7 @@ pipeline {
 
         stage('Run Ansible Playbook') {
             steps {
-                sh 'ansible-playbook -i inventory/hosts.yml playbooks/site.yml -c local --become'
+                sh 'ansible-playbook -i inventory/hosts.yml playbooks/site.yml -c local'
             }
         }
     }
