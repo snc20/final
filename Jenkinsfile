@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/snc20/first1.git'
+                git branch: 'main', url: 'https://github.com/snc20/final.git'
             }
         }
 
